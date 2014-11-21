@@ -1,0 +1,10 @@
+{
+  "firebase": "colla-board",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ],
+  "rules": "rules.json"
+}

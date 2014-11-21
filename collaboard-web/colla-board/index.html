@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/chat.css">
+
+    <title>Firebase Cloud Chat</title>
+  </head>
+
+  <body>
+    <div class="example-chat l-demo-container" style="left:25%">
+      <img class="example-chat-logo" src="images/cloud-chat-logo.png" />
+
+      <header>
+        <!-- APP TITLE -->
+        <div class="example-chat-toolbar">
+          <h2>Displayed messages</h2>
+        </div>
+
+        <!-- NAME FIELD -->
+        <div class='example-chat-username-field'>
+          <div class="example-chat-avatar"><i class="fa fa-bolt"></i></div>
+          <input type='text' id='username' placeholder='Enter your name...'>
+        </div>
+      </header>
+
+      <!-- EMPTY MESSAGE LIST -->
+      <ul id='messages' class="example-chat-messages"></ul>
+
+      <!-- MESSAGE INPUT FIELD -->
+      <footer>
+        <div>
+        <i class="fa fa-comment-o icon-chat"></i>
+        <input type='text' id='new-message'  placeholder='Type a message...'>
+        </div>                    
+      </footer>   
+    </div>
+
+<!--  -->    
+
+    <div class="example-chat l-demo-container" style="left:75%">
+      <img class="example-chat-logo" src="images/cloud-chat-logo.png" />
+
+      <header>
+        <!-- APP TITLE -->
+        <div class="example-chat-toolbar">
+          <h2>Objects in scene</h2>
+        </div>
+
+        <!-- NAME FIELD -->
+      </header>
+
+      <!-- EMPTY Object LIST -->
+      <ul id='objects' class="example-chat-messages"></ul>
+
+      <!-- MESSAGE INPUT FIELD -->
+      <footer>
+        <div>
+        <i class="fa fa-comment-o icon-chat"></i>
+        <input type='text' id='new-obj'  placeholder='Type an object name...'>
+        </div>
+
+        <div>
+        <i class="fa fa-comment-o icon-chat"></i>
+        <input type='text' id='new-pos'  placeholder='And its position X, Y, Z. '>        
+        </div>      
+
+        <div>
+        <button id="clear-all">
+          Clear all
+        </button>            
+      </footer>   
+    </div>
+
+
+    <!-- FIREBASE, JQUERY -->
+    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- CHAT.JS FILE -->
+    <script src="js/chat.js"></script>
+  </body>
+</html>
